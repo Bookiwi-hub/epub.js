@@ -59,35 +59,15 @@
 
 ## 🚀 레포 분석
 
-### 루트 디렉토리
-
-│── 📂 [src](./src/index.md) # 소스 코드 디렉토리(주요 라이브러리 코드) 분석  
-│── 📂 [examples](./examples/index.md) # 라이브러리 사용 예제 모음 폴더 분석  
-│── 📂 test # 테스트 코드 및 테스트 관련 파일  
-│── 📂 types # TypeScript 타입 정의 파일  
-│── 📂 [documentation](./documentation/md/API.md) # API 문서 분석  
-│── 📄 .travis.yml # Travis CI 설정 파일 (지속적 통합)  
-│── 📄 [package.json](./dependencies-analysis.md) # 의존성 목록 분석
-
 ### 핵심 클래스 분석
 
-```
-Book: EPUB 파일의 파싱 및 관리를 담당하는 핵심 클래스
-├── Spine: 책의 섹션 순서와 구조를 정의
-├── Locations: 페이지 위치 및 퍼센트 계산 관리
-├── Navigation: 목차 및 내비게이션 기능 관리
-├── PageList
-├── Resources
-├── Container
-├── Packaging
-└── Rendition: 실제 화면에 도서를 렌더링하는 클래스
-    ├── Themes: 스타일 및 테마 적용을 담당
-    ├── Annotations: 주석 및 하이라이트 관리
-    ├── EpubCFI: EPUB 문서 내 위치를 고유하게 식별하는 CFI 처리
-    ├── ViewManager (Default/Continuous)
-    │   └── View (Iframe)
-    └── Contents: EPUB 내용의 실제 콘텐츠 처리와 DOM 조작을 담당
-```
+[Book](./documentation/Book.md): EPUB 파일의 파싱 및 관리를 담당하는 핵심 클래스
+[Rendition](./documentation/Rendition.md): 실제 화면에 책을 렌더링하는 클래스
+
+### 알아야 하는 개념들
+
+- [base64 & blob](./documentation/base64-blob.md)
+- [Range 객체](./documentation//Range.md)
 
 ## 🔑 활용 방안
 
