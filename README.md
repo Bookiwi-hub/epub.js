@@ -61,7 +61,7 @@
 
 ### 핵심 클래스 분석
 
-[Book](./documentation/Book.md): EPUB 파일의 파싱 및 관리를 담당하는 핵심 클래스
+[Book](./documentation/Book.md): EPUB 파일의 파싱 및 관리를 담당하는 핵심 클래스  
 [Rendition](./documentation/Rendition.md): 실제 화면에 책을 렌더링하는 클래스
 
 ### 알아야 하는 개념들
